@@ -1,0 +1,6 @@
+*.pyc
+.venv/
+.git/
+__pycache__/
+make_path.sh
+login.md
