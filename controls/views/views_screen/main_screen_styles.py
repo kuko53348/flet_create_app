@@ -129,7 +129,7 @@ styles={
     },
     "_4032": {
         # "WIDGET_NAME": "CONTENT_ICON",
-        "name": "arrow_forward_ios_outlined",
+        "name": "home",
         # "tooltip": ""Icon"",
     },
     "_4035": {
@@ -141,14 +141,14 @@ styles={
         "ink": "true",
         "ink_color": "red",
         "margin": {"l":0,"t":0,"r":0,"b":0},
-        "padding": {"l":0,"t":6,"r":6,"b":6},
+        "padding": {"l":6,"t":6,"r":6,"b":6},
         # "tooltip": ""Text: 12""
     },
     "_4036": {
         # "WIDGET_NAME": "CONTENT_TEXT",
         "size": 32.0,
         # "tooltip": ""Text"",
-        "value": "Comencemos ",
+        "value": "Comencemos",
         "weight": "bold"
     },
     "_4043": {

@@ -17,6 +17,7 @@ DATA_GLOBAL: dict = {
 
                         'home':'main_screen', #: default path
                  'main_screen':'main_screen', #: current
+
                }
 
 def GLOBAL_VAR(set_global_var: dict={'var_name':'value_in'}, get_global_var: str='var_name', remove_global_var: str='var_remove'):
@@ -74,6 +75,11 @@ def got_to_screen(to_screen: str, style: str='ring', time_style: float=10 ):
     all_screens:    dict = GLOBAL_VAR(get_global_var='all_screens')
     current_screen: str  = GLOBAL_VAR(get_global_var='current_screen')
 
+    # print(main_page.update())
+    # if not DATA_GLOBAL.get('main_tab_bar'):
+    #     DATA_GLOBAL['main_tab_bar']=True
+
+
     from_screen: dict = all_screens.get(current_screen)
     next_screen: dict = all_screens.get(to_screen)
 
@@ -112,6 +118,8 @@ def got_to_screen(to_screen: str, style: str='ring', time_style: float=10 ):
     #: UPDATE SIZE STREAMING
     next_screen.height , next_screen.width  = main_page.height , main_page.width
     next_screen.update()
+
+    main_page.bottom_appbar.visible=True
 
     if not time_style == 0.0 or time_style == 0:
         main_page.overlay.clear()

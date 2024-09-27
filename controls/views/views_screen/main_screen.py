@@ -12,7 +12,7 @@ phone_style_widget = {
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
         "width": "460",
-        "image_src": "_77203d18-186d-40fa-acc7-982298584979.jpeg",
+        "image_src": "test/proyect_name/proyect_name/assets/_77203d18-186d-40fa-acc7-982298584979.jpeg",
         "image_opacity": "0.61",
         "image_fit": "cover"
     },

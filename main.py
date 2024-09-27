@@ -1,7 +1,9 @@
+import flet as ft
+
 from builder.app_manager  import builder_app ,GLOBAL_VAR
 # from controls.app_style_manager import styles
 from controls.app_screen_manager import screens
-import flet as ft
+from controls.views.nav_bar.nav_bar import  bottom_appbar
 
 
 def change_size(page_width: float, page_height: float):
@@ -31,15 +33,16 @@ def main(page: ft.Page):
     # page.window_center()
 
     #: SIZE
-    page.window.height        = 740  # 566 620
-    page.window.width         = 1050  # 295 320
+    # page.window.height        = 700  # 566 620
+    # page.window.width         = 400  # 295 320
+
     page.padding              = 0
     page.spacing              = 0
     page.expand               = True
 
     #: SCREEN BUILDER
     tmp_screens = builder_app(screen=screens, main_page=page ) #: it's necessary to call all screens
-    all_screens = tmp_screens.get('show_all_screens')                           #: return one dict with all  screens inside
+    # all_screens = tmp_screens.get('show_all_screens')                           #: return one dict with all  screens inside
     show_screen = tmp_screens.get('builder_app')                                #: return exactly first screen
 
 
@@ -70,7 +73,10 @@ def main(page: ft.Page):
                                 # icon_size=14,
                                 on_click=lambda _:print('hello')),
         leading_width=40,
-        title=ft.Text("Name app ",size=14),
+        title=ft.Text(
+                        value="Servicios Gastronomicos",
+                        # size=14
+                        ),
         center_title=False,
         # toolbar_height=40,
         # bgcolor=ft.colors.SURFACE_VARIANT,
@@ -90,7 +96,8 @@ def main(page: ft.Page):
             ),
         ],
     )
-
+    #  NAV APP VAR
+    page.bottom_appbar = bottom_appbar
 
     page.add(show_screen)
     page.update()
