@@ -14,7 +14,7 @@ phone_style_widget = {
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
         "width": "460",
-        "image_src": "test/proyect_name/proyect_name/assets/315d5632-5288-4009-8246-7184305c04a3.webp",
+        "image_src": "fondo_doc.jpeg",
         "image_fit": "cover"
     },
     "MAIN_EFFECTS_CONTAINER": {

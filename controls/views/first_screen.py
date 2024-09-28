@@ -14,7 +14,7 @@ phone_style_widget = {
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
         "width": "460",
-        "image_src": "test/proyect_name/proyect_name/assets/_88292cbc-1dd1-42da-b9fa-6aa695c85199.jpeg",
+        "image_src": "bg_first_screen.jpeg",
         "image_opacity": "0.21999999999999997",
         "image_fit": "cover"
     },

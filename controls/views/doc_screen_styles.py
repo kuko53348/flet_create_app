@@ -29,7 +29,6 @@ styles={
         "border_radius": {"bl":38.0,"br":38.0,"tl":38.0,"tr":38.0},
         "expand": "1",
         "height": "",
-        "image_src": "_0fcbf8aa-7625-4a0d-85e3-9e62b7b8445c.jpeg",
         "ink": "true",
         "ink_color": "cyan",
         "margin": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},

@@ -107,7 +107,7 @@ styles = {
         "height": "",
         "image_fit": "cover",
         "image_opacity": "0.020000000000000018",
-        "image_src": "3b828654-cf7d-459b-8c94-a2797c98084c.webp",
+        "image_src": "image_menu.jpeg",
         "ink": "true",
         "ink_color": "yellow",
         "margin": {"l": 6.0, "t": 6.0, "r": 6.0, "b": 6.0},

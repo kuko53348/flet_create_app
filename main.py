@@ -33,8 +33,8 @@ def main(page: ft.Page):
     # page.window_center()
 
     #: SIZE
-    # page.window.height        = 700  # 566 620
-    # page.window.width         = 400  # 295 320
+    page.window.height        = 740  # 566 620
+    page.window.width         = 1050  # 295 320
 
     page.padding              = 0
     page.spacing              = 0
@@ -74,7 +74,7 @@ def main(page: ft.Page):
                                 on_click=lambda _:print('hello')),
         leading_width=40,
         title=ft.Text(
-                        value="Servicios Gastronomicos",
+                        value="Restauracion",
                         # size=14
                         ),
         center_title=False,
@@ -114,8 +114,8 @@ def run_app():
             )
 
 if __name__ == '__main__':
-    import warnings
-    warnings.simplefilter('ignore',DeprecationWarning)
+    # import warnings
+    # warnings.simplefilter('ignore',DeprecationWarning)
 
     ft.app(
             target=main,
