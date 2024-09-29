@@ -34,7 +34,8 @@ styles = {
         "height": "",
         "horizontal_alignment": "center",
         "scroll": "ALWAYS",
-        # "width": "640"
+        # "width": "640",
+        "expand":"1",
     },
     "_4143": {
         # "WIDGET_NAME": "CONTAINER_ROW",
@@ -71,7 +72,7 @@ styles = {
     },
     "_4148": {
         # "WIDGET_NAME": "CONTENT_ICONBUTTON",
-        "icon": "add_link_sharp",
+        "icon": "swipe_right_alt",
         # "tooltip": ""Accept""
     },
     "_4151": {
@@ -86,7 +87,7 @@ styles = {
         "margin": {"l": 0, "t": 0, "r": 0, "b": 0},
         "padding": {"l": 6, "t": 6, "r": 6, "b": 6},
         # "tooltip": ""Text: 42"",
-        "width": "310",
+        "width": "240",
     },
     "_4152": {
         # "WIDGET_NAME": "CONTENT_TEXT",
@@ -138,7 +139,7 @@ styles = {
     },
     "_4160": {
         # "WIDGET_NAME": "CONTENT_ROW",
-        "scroll": "ALWAYS"
+        # "scroll": "ALWAYS"
     },
     "_4163": {
         # "WIDGET_NAME": "CONTAINER_ICON",
@@ -154,7 +155,7 @@ styles = {
     },
     "_4164": {
         # "WIDGET_NAME": "CONTENT_ICON",
-        "name": "arrow_back_ios_outlined",
+        "name": "swipe_left_rounded",
         # "tooltip": ""Icon""
     },
     "_4167": {
@@ -174,13 +175,14 @@ styles = {
         "size": 17.0,
         # "tooltip": ""Text"",
         # "value": "Manipulación y ubicación de las copas",
+        "width":"240",
     },
     "_4135": {
         # "WIDGET_NAME": "CONTAINER_COLUMN",
         "alignment": {"x": 0, "y": 0},
         "bgcolor": "transparent",
         "border": {"l": {"w": 0, "c": "transparent", "sa": "null"}, "t": {"w": 0, "c": "transparent", "sa": "null"}, "r": {"w": 0, "c": "transparent", "sa": "null"}, "b": {"w": 0, "c": "transparent", "sa": "null"}},
-        "height": "120",
+        "height": "140",
         "ink": "true",
         "ink_color": "yellow",
         "padding": {"l": 6, "t": 6, "r": 6, "b": 6},

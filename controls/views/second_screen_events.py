@@ -30,7 +30,6 @@ def event_4164(secundary_main_widget): # ID: main_screen, event_Icon
     secundary_main_widget.visible=False
     secundary_main_widget.update()
 
-    print(secundary_main_widget)
 def event_4143(main_widget,sub_menu): # ID: main_screen, event_Text
     # SHOW VISIBLE SECUNDARY MENU TO READ DOC
     main_widget.visible=True

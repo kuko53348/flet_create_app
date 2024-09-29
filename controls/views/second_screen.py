@@ -14,7 +14,7 @@ phone_style_widget = {
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
         "width": "460",
-        "image_src": "test/proyect_name/proyect_name/assets/_88292cbc-1dd1-42da-b9fa-6aa695c85199.jpeg",
+        "image_src": "image_menu.jpeg",
         "image_opacity": "0.21999999999999997",
         "image_fit": "cover"
     },
@@ -119,7 +119,7 @@ class second_screen(ft.Container):
                                                             # on_click= lambda _: event_4148(data='_4148'),
                                                             content= ft.IconButton(
                                                                     **self.dict_style('_4148'),
-                                                                    on_click= lambda _: event_4148(data='_4148'),
+                                                                    # on_click= lambda _: event_4148(data='_4148'),
                                                             ),),
 
                                                     ft.Container( # Text

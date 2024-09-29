@@ -40,7 +40,12 @@ class doc_screen(ft.Container):
         self: list      = [self.__setattr__(_ , dict_keys.get(_)) for _ in dict_keys]
 
     def build(self):
-
+        #: HEADER TEXT CONTAINER
+        self.header_text =  ft.Text(
+                                **self.dict_style('_4024'),
+                                value=my_doc(GLOBAL_VAR(get_global_var='documentation'))
+                                # on_click= lambda _: event_4024(data='_4024'),
+                                )
         #: MAIN PHONE CONTAINER
         self.content_box = [ 
                 ft.Container(  # Container_Column
@@ -68,6 +73,7 @@ class doc_screen(ft.Container):
                                                                 # on_click= lambda _: event_4008(data='_4008'),
                                                                 content= ft.Text(
                                                                         **self.dict_style('_4008'),
+                                                                        value=GLOBAL_VAR(get_global_var='Capitulo')
                                                                         # on_click= lambda _: event_4008(data='_4008'),
                                                                 ),),
 
@@ -82,7 +88,7 @@ class doc_screen(ft.Container):
                                                                                         # on_click= lambda _: event_4016(data='_4016'),
                                                                                         content= ft.IconButton(
                                                                                                 **self.dict_style('_4016'),
-                                                                                                on_click= lambda _: event_4016(data='_4016'),
+                                                                                                on_click= lambda _: event_4016(data=self.header_text),
                                                                                         ),),
 
                                                                                 ft.Container( # IconButton
@@ -90,7 +96,7 @@ class doc_screen(ft.Container):
                                                                                         # on_click= lambda _: event_4020(data='_4020'),
                                                                                         content= ft.IconButton(
                                                                                                 **self.dict_style('_4020'),
-                                                                                                on_click= lambda _: event_4020(data='_4020'),
+                                                                                                on_click= lambda _: event_4020(data=self.header_text),
                                                                                         ),),
 
                                                         ],),), #// LAYER 2 END
@@ -105,11 +111,7 @@ class doc_screen(ft.Container):
                         ft.Container( # Text
                                 **self.dict_style('_4023'),
                                 # on_click= lambda _: event_4024(data='_4024'),
-                                content= ft.Text(
-                                        **self.dict_style('_4024'),
-                                        value=my_doc(GLOBAL_VAR(get_global_var='documentation'))
-                                        # on_click= lambda _: event_4024(data='_4024'),
-                                ),),
+                                content=self.header_text),
 
         ],),),
         ft.Container(  # Container_Column

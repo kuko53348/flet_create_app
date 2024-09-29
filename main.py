@@ -4,7 +4,7 @@ from builder.app_manager  import builder_app ,GLOBAL_VAR
 # from controls.app_style_manager import styles
 from controls.app_screen_manager import screens
 from controls.views.nav_bar.nav_bar import  bottom_appbar
-
+from controls.views.nav_bar.nav_drawer import  nav_drawer
 
 def change_size(page_width: float, page_height: float):
     #: RESIZE HEIGHT FROM SCREEN
@@ -15,6 +15,12 @@ def change_size(page_width: float, page_height: float):
     data = all_screens.get(current_screen)
     data.height , data.width  = page_height , page_width
     data.update()
+
+def check_menu_bar(main_page):
+    current_screen: dict = GLOBAL_VAR(get_global_var='current_screen')
+    if not current_screen == "main_screen":
+        main_page.open(main_page.drawer)
+
 
 def main(page: ft.Page):
 
@@ -32,9 +38,12 @@ def main(page: ft.Page):
     page.window.top           = 0
     # page.window_center()
 
-    #: SIZE
-    page.window.height        = 740  # 566 620
-    page.window.width         = 1050  # 295 320
+    #: RESIZE
+    # page.window.height        = 350  # 566 620 710
+    # page.window.width         = 710  # 295 320 350
+
+    page.window.height        = 710  # 566 620 710
+    page.window.width         = 350  # 295 320 350
 
     page.padding              = 0
     page.spacing              = 0
@@ -63,44 +72,58 @@ def main(page: ft.Page):
 
     # print(styles.get('_2921').get('bgcolor'))
     #: WE SET HOT SCOPE VAR
-
+    # trailing=ft.Icon(ft.icons.WB_SUNNY_OUTLINED),
+    current_screen: dict = GLOBAL_VAR(get_global_var='current_screen')
     page.appbar = ft.AppBar(
         # bgcolor=ft.colors.WHITE12,
-        bgcolor=ft.LinearGradient( begin=ft.alignment.top_center,end=ft.alignment.bottom_center,colors=[ft.colors.BLUE, ft.colors.YELLOW],),
+        # bgcolor=ft.LinearGradient( begin=ft.alignment.top_center,end=ft.alignment.bottom_center,colors=[ft.colors.BLUE, ft.colors.YELLOW],),
 
         # bgcolor=ft.colors.WHITE12,
-        leading=ft.IconButton(  icon=ft.icons.POLYMER,
+        leading=ft.Icon(
+                        # name=ft.icons.LIQUOR_ROUNDED,
+                        name=ft.icons.LOCAL_RESTAURANT,
                                 # icon_size=14,
-                                on_click=lambda _:print('hello')),
-        leading_width=40,
+                                # on_click=lambda _:print('hello')
+                                ),
+        # # leading_width=40,
         title=ft.Text(
                         value="Restauracion",
                         # size=14
                         ),
+        # elevation=24,
         center_title=False,
         # toolbar_height=40,
-        # bgcolor=ft.colors.SURFACE_VARIANT,
+        # bgcolor=ft.colors.BLACK12,t
+        # check_data: bool
+
         actions=[
 
-            ft.IconButton(ft.icons.WB_SUNNY_OUTLINED,icon_size=14),
-            ft.IconButton(ft.icons.FILTER_3,icon_size=14),
-            ft.PopupMenuButton(
-                items=[
-                    ft.PopupMenuItem(text="Item 1"),
-                    ft.PopupMenuItem(),  # divider
-                    ft.PopupMenuItem(
-                        text="Checked item", checked=False,height=20
-                        # on_click=check_item_clicked
-                    ),
-                ]
-            ),
+            ft.IconButton(
+                            icon=ft.icons.TABLE_ROWS_ROUNDED,
+                            # icon_size=14,
+                            on_click=lambda e: check_menu_bar(main_page=page)
+                            ),
+            # ft.IconButton(ft.icons.FILTER_3,icon_size=14),
+            # ft.PopupMenuButton(
+            #     items=[
+            #         ft.PopupMenuItem(text="Settings"),
+            #         # ft.PopupMenuItem(),  # divider
+            #         # ft.PopupMenuItem(
+            #         #     text="Checked item", checked=False,height=20
+            #         #     # on_click=check_item_clicked
+            #         # ),
+            #     ]
+            # ),
         ],
     )
+    #  NAV DRAWER APP VAR
+    page.drawer=nav_drawer
     #  NAV APP VAR
     page.bottom_appbar = bottom_appbar
 
     page.add(show_screen)
     page.update()
+    # page.open(page.drawer)
 
     # styles['_2921']['bgcolor'] ="Cyan"
 

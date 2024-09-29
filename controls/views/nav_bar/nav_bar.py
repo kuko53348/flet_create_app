@@ -40,6 +40,8 @@ bottom_appbar = ft.BottomAppBar(
                                             border_radius=ft.border_radius.all(32),
                                             padding=0,
                                             margin=0,
+                                            border= ft.border.all(4, "WHITE,0.02"),       #: ft.border.only(Left=8, top=8, right=8, bottom=8),
+
                                             # shadow = ft.BoxShadow(
                                             #            spread_radius= 0,
                                             #            blur_radius  = 15,
@@ -67,7 +69,7 @@ bottom_appbar = ft.BottomAppBar(
                                                                         ),
                                                         ft.Container(
                                                             width=89,
-                                                            content= ft.Icon(name="ballot_outlined"),
+                                                            content= ft.Icon(name="widgets_rounded"),
 
                                                                         ),
                                                 ],

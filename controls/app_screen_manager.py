@@ -17,10 +17,9 @@ screens: dict={
                 'main_screen': main_screen(),
                 'first_screen': first_screen(),
                 'second_screen': second_screen(),
-                # 'second_screen_show': second_screen_show(),
                 'doc_screen': doc_screen(),
                 #
                 # Testing
-                # 'main_screen': first_screen(),
+                # 'main_screen': doc_screen(),
 
                 }

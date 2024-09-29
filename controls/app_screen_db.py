@@ -35,10 +35,12 @@ def GLOBAL_VAR(
      global DATA_GLOBAL
 
      if not set_global_var == {'var_name':'value_in'}:
+          """ UPDATE DATABASE IF NO EXIST CREATE DATA IF EXIST OVERWRITE DATA"""
           DATA_GLOBAL.update(set_global_var)
 
      elif not get_global_var == 'var_name':
-          TMP_DATA_GLOBAL  =  DATA_GLOBAL.get(get_global_var)
+          """ FIND SELECTED INPUT IN DATABASE IF NO EXIST RETURN THAT NO EXIST DATA"""
+          TMP_DATA_GLOBAL  =  DATA_GLOBAL.get(get_global_var,"Please no exist input in database")
           return TMP_DATA_GLOBAL
 
      elif not remove_global_var == 'var_remove':

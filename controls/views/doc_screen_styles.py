@@ -9,9 +9,9 @@ styles={
         "border": {"l":{"w":0,"c":"transparent","sa":"null"},"t":{"w":0,"c":"transparent","sa":"null"},"r":{"w":0,"c":"transparent","sa":"null"},"b":{"w":0,"c":"transparent","sa":"null"}},
         "border_radius": {"bl":38.0,"br":38.0,"tl":38.0,"tr":38.0},
         "height": "",
-        "ink": "true",
-        "ink_color": "yellow",
-        "margin": {"l":6.0,"t":6.0,"r":6.0,"b":6.0},
+        # "ink": "true",
+        # "ink_color": "yellow",
+        "margin": {"l":6,"t":6,"r":6,"b":6},
         "padding": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},
         # "tooltip": ""Column: 1"",
         "width": "640"
@@ -19,7 +19,7 @@ styles={
     "_3988": {
         # "WIDGET_NAME": "CONTENT_COLUMN",
         "horizontal_alignment": "center",
-        "scroll": "ALWAYS"
+        # "scroll": "ALWAYS"
     },
     "_3999": {
         # "WIDGET_NAME": "CONTAINER_ROW",
@@ -29,8 +29,8 @@ styles={
         "border_radius": {"bl":38.0,"br":38.0,"tl":38.0,"tr":38.0},
         "expand": "1",
         "height": "",
-        "ink": "true",
-        "ink_color": "cyan",
+        # "ink": "true",
+        # "ink_color": "cyan",
         "margin": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},
         "padding": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},
         # "tooltip": ""Row: 4"",
@@ -42,10 +42,10 @@ styles={
         "alignment": "spaceBetween",
         "expand": "1",
         "height": "",
-        "scroll": "ALWAYS",
-        "tight": "false",
+        # "scroll": "ALWAYS",
+        # "tight": "false",
         "width": "",
-        "wrap": "false"
+        # "wrap": "false"
     },
     "_4003": {
         # "WIDGET_NAME": "CONTAINER_ICONBUTTON",
@@ -56,12 +56,12 @@ styles={
         "ink": "true",
         "ink_color": "red",
         "margin": {"l":0,"t":0,"r":0,"b":0},
-        "padding": {"l":6,"t":6,"r":6,"b":6},
+        "padding": {"l":6,"t":6,"r":0,"b":6},
         # "tooltip": ""Icon Button: 5""
     },
     "_4004": {
         # "WIDGET_NAME": "CONTENT_ICONBUTTON",
-        "icon": "menu_book_outlined",
+        "icon": "swipe_down_rounded",
         # "tooltip": ""Accept""
     },
     "_4007": {
@@ -80,10 +80,10 @@ styles={
     "_4008": {
         # "WIDGET_NAME": "CONTENT_TEXT",
         "expand": "1",
-        "size": 23.0,
+        "size": 18,
         "text_align": "left",
         # "tooltip": ""Text"",
-        "value": "Surgimiento",
+        # "value": "Surgimiento",
         "weight": "bold"
     },
     "_4011": {
@@ -94,12 +94,12 @@ styles={
         "border_radius": {"bl":38.0,"br":38.0,"tl":38.0,"tr":38.0},
         "ink": "true",
         "ink_color": "cyan",
-        "padding": {"l":6,"t":6,"r":6,"b":6},
+        "padding": {"l":0,"t":0,"r":0,"b":0},
         # "tooltip": ""Row: 7""
     },
     "_4012": {
         # "WIDGET_NAME": "CONTENT_ROW",
-        "scroll": "ALWAYS"
+        # "scroll": "ALWAYS"
     },
     "_4015": {
         # "WIDGET_NAME": "CONTAINER_ICONBUTTON",
@@ -110,12 +110,12 @@ styles={
         "ink": "true",
         "ink_color": "red",
         "margin": {"l":0,"t":0,"r":0,"b":0},
-        "padding": {"l":6,"t":6,"r":6,"b":6},
+        "padding": {"l":0,"t":6,"r":0,"b":6},
         # "tooltip": ""Icon Button: 8""
     },
     "_4016": {
         # "WIDGET_NAME": "CONTENT_ICONBUTTON",
-        "icon": "remove_circle",
+        "icon": "add_circle_outlined",
         # "tooltip": ""Accept""
     },
     "_4019": {
@@ -127,12 +127,12 @@ styles={
         "ink": "true",
         "ink_color": "red",
         "margin": {"l":0,"t":0,"r":0,"b":0},
-        "padding": {"l":6,"t":6,"r":6,"b":6},
+        "padding": {"l":0,"t":6,"r":6,"b":6},
         # "tooltip": ""Icon Button: 9""
     },
     "_4020": {
         # "WIDGET_NAME": "CONTENT_ICONBUTTON",
-        "icon": "add_circle_outlined",
+        "icon": "remove_circle",
         # "tooltip": ""Accept""
     },
     "_3991": {
@@ -141,12 +141,12 @@ styles={
         "bgcolor": "black54",
         "blur": ["20","20"],
         "border": {"l":{"w":0,"c":"transparent","sa":"null"},"t":{"w":0,"c":"transparent","sa":"null"},"r":{"w":0,"c":"transparent","sa":"null"},"b":{"w":0,"c":"transparent","sa":"null"}},
-        "border_radius": {"bl":38.0,"br":38.0,"tl":38.0,"tr":38.0},
+        "border_radius": {"bl":38,"br":38,"tl":38,"tr":38},
         "expand": "1",
         "height": "",
         "ink": "true",
         "ink_color": "yellow",
-        "margin": {"l":8.0,"t":8.0,"r":8.0,"b":8.0},
+        "margin": {"l":6,"t":6,"r":6,"b":6},
         "padding": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},
         # "tooltip": ""Column: 2"",
         "width": "640"
@@ -164,7 +164,7 @@ styles={
         # "WIDGET_NAME": "CONTAINER_TEXT",
         "alignment": {"x":0,"y":1},
         "bgcolor": "black54",
-        "border": {"l":{"w":8,"c":"black12","sa":"null"},"t":{"w":8,"c":"black12","sa":"null"},"r":{"w":8,"c":"black12","sa":"null"},"b":{"w":8,"c":"black12","sa":"null"}},
+        "border": {"l":{"w":6,"c":"black12","sa":"null"},"t":{"w":6,"c":"black12","sa":"null"},"r":{"w":6,"c":"black12","sa":"null"},"b":{"w":6,"c":"black12","sa":"null"}},
         "border_radius": {"bl":38.0,"br":38.0,"tl":38.0,"tr":38.0},
         "expand": "",
         "height": "",
@@ -182,7 +182,7 @@ styles={
         "disabled": "false",
         "expand": "1",
         "height": "",
-        "size": 16.0,
+        "size": 14.0,
         "text_align": "left",
         # "tooltip": ""Text"",
         "width": ""
@@ -192,7 +192,7 @@ styles={
         "alignment": {"x":0,"y":0},
         "bgcolor": "transparent",
         "border": {"l":{"w":0,"c":"transparent","sa":"null"},"t":{"w":0,"c":"transparent","sa":"null"},"r":{"w":0,"c":"transparent","sa":"null"},"b":{"w":0,"c":"transparent","sa":"null"}},
-        "height": "120",
+        "height": "140",
         "ink": "true",
         "ink_color": "yellow",
         "padding": {"l":6,"t":6,"r":6,"b":6},
