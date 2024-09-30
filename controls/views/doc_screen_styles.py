@@ -56,7 +56,7 @@ styles={
         "ink": "true",
         "ink_color": "red",
         "margin": {"l":0,"t":0,"r":0,"b":0},
-        "padding": {"l":6,"t":6,"r":0,"b":6},
+        "padding": {"l":6,"t":6,"r":6,"b":6},
         # "tooltip": ""Icon Button: 5""
     },
     "_4004": {
@@ -110,7 +110,7 @@ styles={
         "ink": "true",
         "ink_color": "red",
         "margin": {"l":0,"t":0,"r":0,"b":0},
-        "padding": {"l":0,"t":6,"r":0,"b":6},
+        "padding": {"l":6,"t":6,"r":0,"b":6},
         # "tooltip": ""Icon Button: 8""
     },
     "_4016": {

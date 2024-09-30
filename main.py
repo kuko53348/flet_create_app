@@ -38,15 +38,15 @@ def main(page: ft.Page):
     page.window.top           = 0
     # page.window_center()
 
-    #: RESIZE
+    #:======================== production RESIZE
     # page.window.height        = 350  # 566 620 710
     # page.window.width         = 710  # 295 320 350
 
     # page.window.height        = 710  # 566 620 710
     # page.window.width         = 350  # 295 320 350
-    #
-    page.window.height        = 1200  # 295 320 350
-    page.window.width         = 900  # 295 320 350
+    #=================================================
+    page.window.height        = 768   # 295 320 350
+    page.window.width         = 960  # 295 320 350
 
     page.padding              = 0
     page.spacing              = 0
