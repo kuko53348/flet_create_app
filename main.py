@@ -44,6 +44,9 @@ def main(page: ft.Page):
 
     # page.window.height        = 710  # 566 620 710
     # page.window.width         = 350  # 295 320 350
+    #
+    page.window.height        = 1200  # 295 320 350
+    page.window.width         = 900  # 295 320 350
 
     page.padding              = 0
     page.spacing              = 0
@@ -58,7 +61,7 @@ def main(page: ft.Page):
     #: UPDATE SIZE OF MAIN PHGONE SCREEN
     show_screen.height = page.window.height
     show_screen.width  = page.window.width
-    page.on_resize     = lambda _: change_size(page_width=page.window.width, page_height=page.window.height)
+    page.on_resized     = lambda _: change_size(page_width=page.window.width, page_height=page.window.height)
 
     #: WALLPAPER
     # page.decoration   = ft.BoxDecoration(image=ft.DecorationImage(src="exemple.jpg",fit=ft.ImageFit.COVER,opacity=0.2,), #: CONTAIN, COVER, FILL, FIT_HEIGHT, FIT_WIDTH, SCALE_DOWN
