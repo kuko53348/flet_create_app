@@ -14,9 +14,11 @@ phone_style_widget = {
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
         "width": "460",
-        "image_src": "bg_first_screen.jpeg",
-        "image_opacity": "0.21999999999999997",
-        "image_fit": "cover"
+        "image": {
+                'src':"bg_first_screen.jpeg",
+                "opacity": "0.21999999999999997",
+                "fit": "cover"
+                },
     },
     "MAIN_EFFECTS_CONTAINER": {
         "alignment": {"x":0,"y":0},
@@ -38,6 +40,7 @@ class first_screen(ft.Container):
         super().__init__()
         dict_keys: dict = self.first_screen_style(code='MAIN_CONTAINER')
         self: list      = [self.__setattr__(_ , dict_keys.get(_)) for _ in dict_keys]
+
 
     def build(self):
 

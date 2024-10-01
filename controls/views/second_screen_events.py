@@ -3,8 +3,8 @@
 EVENT MANAGER WILL CONTENT ALL APP EVENT IN ONE PLACE TO MAKE A EASY USABILITY
 """
 
-from builder.app_manager import got_to_screen
 from ..app_screen_db import GLOBAL_VAR
+from builder.app_manager import got_to_screen
 from .keys_db import index_database
 
 
@@ -32,6 +32,7 @@ def event_4164(secundary_main_widget): # ID: main_screen, event_Icon
 
 def event_4143(main_widget,sub_menu): # ID: main_screen, event_Text
     # SHOW VISIBLE SECUNDARY MENU TO READ DOC
+
     main_widget.visible=True
     main_widget.update()
 
@@ -39,7 +40,16 @@ def event_4159(key_sub_menu): # ID: main_screen, event_Text
     # SET DOCUMENTATION
     capitulo= GLOBAL_VAR(get_global_var='Capitulo')
     key_documentation= GLOBAL_VAR(get_global_var='Menu').get(key_sub_menu)
+
+    # print(capitulo,'<== capitulo')
+    # print(key_sub_menu,'<== key_sub_menu')
+    # print(key_documentation,'<== key_documentation')
+
     GLOBAL_VAR(set_global_var={
                                 'documentation':key_documentation,
+                                'key_sub_menu':key_sub_menu,
                                 })
     got_to_screen(to_screen= 'doc_screen' ,style='burble' ,time_style=0.8 )
+
+    # RESET DEFAULD FALSE SECUNDARY SCREEN
+    GLOBAL_VAR(set_global_var={'secundar_menu_show':False})

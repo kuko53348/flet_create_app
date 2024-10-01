@@ -88,5 +88,5 @@ from ..app_screen_db import GLOBAL_VAR
 #     ...
 def event_3991(data): # ID: main_screen, event_Text
     # print(f"Demo App: {data} event_Text")
-    GLOBAL_VAR(set_global_var={'Capitulo':data})
+    GLOBAL_VAR(set_global_var={'Capitulo':data,'show_off':'show_first_menu'})
     got_to_screen(to_screen= 'second_screen' ,style='burble' ,time_style=0.8 )

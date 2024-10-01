@@ -14,9 +14,11 @@ phone_style_widget = {
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
         "width": "460",
-        "image_src": "image_menu.jpeg",
-        "image_opacity": "0.21999999999999997",
-        "image_fit": "cover"
+        "image": {
+                'src':"image_menu.jpeg",
+                "opacity": "0.21999999999999997",
+                "fit": "cover"
+                },
     },
     "MAIN_EFFECTS_CONTAINER": {
         "alignment": {"x":0,"y":0},
@@ -99,44 +101,102 @@ class second_screen(ft.Container):
         # GET GIRD SCREEN SELECTED
         self.topic = GLOBAL_VAR(get_global_var='Capitulo')
         self.tmp_menu_cap = index_database.get(self.topic)
+        self.check_secundary_menu = GLOBAL_VAR(get_global_var='secundary_menu_show')
 
-        for tmp_keys in self.tmp_menu_cap:
-            self.builder_main_menu=  ft.Container(  # Container_Row
-                                    **self.dict_style('_4143'),
-                                    # on_click= lambda _: event_4143(data='_4143'),
-                                    on_click= lambda _: self.builder_secundary_menu(
-                                                            main_widget=self.show_secundary_menu,
-                                                            key_submenu=_.control.content.controls[1].content.value,
-                                                            submenu=self.tmp_menu_cap.get(_.control.content.controls[1].content.value),
-                                                            ),
+        if not self.check_secundary_menu:
+            for tmp_keys in self.tmp_menu_cap:
+                self.builder_main_menu=  ft.Container(  # Container_Row
+                                        **self.dict_style('_4143'),
+                                        # on_click= lambda _: event_4143(data='_4143'),
+                                        # on_click= lambda _: print(_.control.content.controls[1].content.value),
+                                        on_click= lambda _: self.builder_secundary_menu(
+                                                                main_widget=self.show_secundary_menu,
+                                                                key_submenu=_.control.content.controls[1].content.value,
+                                                                submenu=self.tmp_menu_cap.get(_.control.content.controls[1].content.value),
+                                                                show_bool=False,
+                                                                ),
 
-                                    content= ft.Row( # Row
-                                            **self.dict_style('_4144'),
-                                            controls= [
+                                        content= ft.Row( # Row
+                                                **self.dict_style('_4144'),
+                                                controls= [
 
-                                                    ft.Container( # IconButton
-                                                            **self.dict_style('_4147'),
-                                                            # on_click= lambda _: event_4148(data='_4148'),
-                                                            content= ft.IconButton(
-                                                                    **self.dict_style('_4148'),
-                                                                    # on_click= lambda _: event_4148(data='_4148'),
-                                                            ),),
+                                                        ft.Container( # IconButton
+                                                                **self.dict_style('_4147'),
+                                                                # on_click= lambda _: event_4148(data='_4148'),
+                                                                content= ft.IconButton(
+                                                                        **self.dict_style('_4148'),
+                                                                        # on_click= lambda _: event_4148(data='_4148'),
+                                                                ),),
 
-                                                    ft.Container( # Text
-                                                            **self.dict_style('_4151'),
-                                                            # on_click= lambda _: event_4152(data='_4152'),
-                                                            content= ft.Text(
-                                                                    **self.dict_style('_4152'),
-                                                                    value=tmp_keys,
-                                                                    # on_click= lambda _: event_4152(data='_4152'),
-                                                            ),)
-                                                    ],),) #// LAYER 2 END
-            self.add_menu.controls.append(self.builder_main_menu)
+                                                        ft.Container( # Text
+                                                                **self.dict_style('_4151'),
+                                                                # on_click= lambda _: event_4152(data='_4152'),
+                                                                content= ft.Text(
+                                                                        **self.dict_style('_4152'),
+                                                                        value=tmp_keys,
+                                                                        # on_click= lambda _: event_4152(data='_4152'),
+                                                                ),)
+                                                        ],),) #// LAYER 2 END
+                self.add_menu.controls.append(self.builder_main_menu)
 
+        else:
+            submenu= GLOBAL_VAR(get_global_var='Menu')
+            key_sub_menu= GLOBAL_VAR(get_global_var='key_sub_menu')
+            # print('hgere <===============',self.show_secundary_menu)
+            self.tmp_topic = GLOBAL_VAR(get_global_var='Capitulo')
+            # self.check_secundary_menu = GLOBAL_VAR(get_global_var='secundary_menu_show')
 
-    def builder_secundary_menu(self, main_widget,key_submenu, submenu):
+            self.builder_secundary_menu(
+                                    main_widget=self.show_secundary_menu,
+                                    key_submenu=key_sub_menu,
+                                    submenu=submenu,
+                                    show_bool=False
+                                    )
+            self.tmp_menu_cap_second = index_database.get(self.tmp_topic)
+
+            for tmp_keys in self.tmp_menu_cap_second:
+                self.builder_main_menu=  ft.Container(  # Container_Row
+                                        **self.dict_style('_4143'),
+                                        # on_click= lambda _: event_4143(data='_4143'),
+                                        # on_click= lambda _: print(_.control.content.controls[1].content.value),
+                                        on_click= lambda _: self.builder_secundary_menu(
+                                                                main_widget=self.show_secundary_menu,
+                                                                key_submenu=_.control.content.controls[1].content.value,
+                                                                submenu=self.tmp_menu_cap_second.get(_.control.content.controls[1].content.value),
+                                                                show_bool=True
+                                                                ),
+
+                                        content= ft.Row( # Row
+                                                **self.dict_style('_4144'),
+                                                controls= [
+
+                                                        ft.Container( # IconButton
+                                                                **self.dict_style('_4147'),
+                                                                # on_click= lambda _: event_4148(data='_4148'),
+                                                                content= ft.IconButton(
+                                                                        **self.dict_style('_4148'),
+                                                                        # on_click= lambda _: event_4148(data='_4148'),
+                                                                ),),
+
+                                                        ft.Container( # Text
+                                                                **self.dict_style('_4151'),
+                                                                # on_click= lambda _: event_4152(data='_4152'),
+                                                                content= ft.Text(
+                                                                        **self.dict_style('_4152'),
+                                                                        value=tmp_keys,
+                                                                        # on_click= lambda _: event_4152(data='_4152'),
+                                                                ),)
+                                                        ],),) #// LAYER 2 END
+                self.add_menu.controls.append(self.builder_main_menu)
+
+    def builder_secundary_menu(self, main_widget,key_submenu, submenu, show_bool):
         # Set main menu in second screen
-        main_screen= GLOBAL_VAR(set_global_var={'Menu':submenu})
+        GLOBAL_VAR(
+                    set_global_var={
+                                'Menu':submenu,
+                                # 'key_submenu':key_submenu,
+                                })
+
 
         for tmp_keys in submenu:
             self.builder_submenu = ft.Container(  # Container_Row
@@ -169,9 +229,22 @@ class second_screen(ft.Container):
 
         # SHOW
         self.show_secundary_menu.visible=True
-        self.show_secundary_menu.update()
 
-        # GLOBAL_VAR(set_global_var={'show_secundary_menu':self.show_secundary_menu})
+        if show_bool:
+            # show secundary menu if press back from document
+            self.show_secundary_menu.update()
+
+        secundary_menu_show = GLOBAL_VAR(get_global_var='secundary_menu_show')
+
+        if secundary_menu_show:
+            show_off = GLOBAL_VAR(get_global_var='show_off')
+            if show_off == 'show_first_menu':
+                self.show_secundary_menu.visible=False
+
+        else:
+            self.show_secundary_menu.update()
+
+
 
     def second_screen_style(self,code: str=''):
         #: SET MAIN STYLE WIDGET

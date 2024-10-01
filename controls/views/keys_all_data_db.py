@@ -4441,24 +4441,7 @@ Es un helado que se fabrica a partir de una mezcla de base, producida industrial
 • Sondae Amanecer
 • Piña Real
 • Copa Melba
-""", 'Documentation': """Bibliografía:
-
-Textos Básicos:
-
-1. Texto de Tecnología de Salón de Francisco Pérez Dorta
-2. Pereira R: Ramón (1993) ―El Dependiente Gastronómico‖ Tomo I y II
-3. Dirección de Capacitación del INTUR
-4. Texto de Tecnología de Salón de Francisco Pérez Dorta
-
-Texto Complementario:
-
-1. Dossier de Servicio Gastronómico EHT Comodoro (en soporte Magnético)
-2. Dirección de Capacitación INTUR. ―Dependiente Gastronómico A, B, C y D. Editorial Orbe. Ciudad Habana 1979
-3. Material Complementario. utensilios de la vajilla López Guerra Lorely EHT VC
-4. Gallego J. F. ―Manual Práctico de Restaurantes‖ Editorial Trillas 1997
-5. Se utilizarán los materiales de apoyo y las bibliografías existentes en los diferentes CIDTUR de las escuelas.
-6. Plan de Clase Asignatura: Tecnología de Servicio Gastronómico I Programa F-14
-""", 'Index': """Indice:
+""",  'Index': """Indice:
 
 Capitulo: 1
 
@@ -4517,7 +4500,105 @@ Capitulo: 7
 Capitulo: 8
 
 • 8.1 Documentacion & Indice
-"""
+""",
+
+"Introduccion":"""
+¿Estás listo para embarcarte en un emocionante viaje al mundo de la Tecnología de Servicio Gastronómico FORMATUR VARADERO?
+
+Creemos que toda gran experiencia gastronómica comienza con un servicio excepcional. Nuestro curso integral está diseñado específicamente para aspirantes a camareros, ofreciéndole todo lo que necesita para tener éxito, ¡todo en una aplicación conveniente!
+
+Con un solo clic, desbloqueará un tesoro de conocimientos que cubre todos los aspectos del servicio de restaurantes. Desde dominar el arte de la interacción con el cliente hasta comprender las complejidades del menú y perfeccionar sus habilidades multitarea, nuestros módulos diseñados por expertos lo guiarán en cada paso del camino.
+
+Sumérjase en lecciones atractivas, cuestionarios interactivos y consejos prácticos que le permitirán crear experiencias gastronómicas memorables para sus invitados. Ya sea que sea un principiante o esté buscando perfeccionar sus habilidades, FORMATUR VARADERO es su mejor recurso para convertirse en un camarero destacado.
+
+¡Únase a nosotros hoy y convirtamos su pasión por el servicio en una carrera gratificante!...""",
+
+"Agradecimientos":"""
+Estimados profesores:
+
+Profesora: Lic. Magalys Lamela Carabeo
+Profesor:  Lic. Ramón Aves Rodrigo
+
+Mi sincera gratitud por su compromiso con nuestro aprendizaje no solo ha enriquecido nuestra comprensión del tema, sino que también nos ha inspirado a buscar la excelencia en nuestros viajes en la Gastronomía. Los conocimientos y habilidades que impartiste sin duda se quedarán con nosotros a medida que continuemos explorando el mundo de la gastronomía.
+
+Gracias por su orientación, paciencia y aliento a lo largo de este curso. Estoy realmente agradecido por la oportunidad de aprender de educadores tan conocedores y apasionados.
+
+Saludos cordiales,
+
+Alumnos: Maenys Javier Qesada Reyes
+Alumnos: Dianeys Sanabria Mesa
+
+Graduacion:
+
+TSG / Año: 2018
+
+""",
+"Documentacion":"""Bibliografía:
+
+Textos Básicos:
+
+- 1. Texto de Tecnología de Salón de Francisco Pérez Dorta
+
+- 2. Pereira R: Ramón (1993) ―El Dependiente Gastronómico‖ Tomo I y II
+
+- 3. Dirección de Capacitación del INTUR
+
+- 4. Texto de Tecnología de Salón de Francisco Pérez Dorta
+
+Texto Complementario:
+
+- 1. Dossier de Servicio Gastronómico EHT Comodoro (en soporte Magnético)
+
+- 2. Dirección de Capacitación INTUR. ―Dependiente Gastronómico A, B, C y D. Editorial Orbe. Ciudad Habana 1979
+
+- 3. Material Complementario. utensilios de la vajilla López Guerra Lorely EHT VC
+
+- 4. Gallego J. F. ―Manual Práctico de Restaurantes‖ Editorial Trillas 1997
+
+- 5. Se utilizarán los materiales de apoyo y las bibliografías existentes en los diferentes CIDTUR de las escuelas.
+
+- 6. Plan de Clase Asignatura: Tecnología de Servicio Gastronómico I Programa F-14
+
+""",
+"Desarrollador":"""
+Soy Desarrollador de software especializado en la creación de aplicaciones innovadoras. Con un enfoque en la calidad y la experiencia del usuario, aprovecha las tecnologías modernas para ofrecer soluciones eficientes.
+
+            DEV:   Maenys Javier Quesada Reyes
+            PHONE: +53 54448442.
+            EMAIL: kuko53348gmail.com
+
+
+Si está interesado en crear o desplegar su propio Proyecto o Negocio y solo le hace falta crear su propia APP para promocionar vender etc.. o solo estás buscando crear un proyecto que tiene en mente y que sea multiplataforma.
+
+            [WINDOWS, ANDROID, IOS, LINUX ]
+
+Puede contactarme y desplegar sus ideas un solo proyecto desplegado en todas con solo contactarme.
+
+""",
+"Open Source License":"""
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 2, June 1991
+
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The licenses for most software are designed to take away your
+freedom to share and change it.  By contrast, the GNU General Public
+License is intended to guarantee your freedom to share and change free
+software--to make sure the software is free for all its users.  This
+General Public License applies to most of the Free Software
+Foundation's software and to any other program whose authors commit to
+using it.  (Some other Free Software Foundation software is covered by
+the GNU Lesser General Public License instead.)  You can apply it to
+your programs, too.
+
+...
+""",
+
 }
 
 

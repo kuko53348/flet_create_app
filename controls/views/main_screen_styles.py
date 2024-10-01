@@ -19,7 +19,7 @@ styles={
         "size": 39.0,
         "text_align": "left",
         # "tooltip": ""Text"",
-        "value": "Servicios Gastronomicos. Formatur Varadero",
+        "value": "Servicios Gastronómicos. Formatur Varadero",
         "weight": "bold"
     },
     "_3999": {
@@ -36,8 +36,8 @@ styles={
     },
     "_4000": {
         # "WIDGET_NAME": "CONTENT_COLUMN",
-        "horizontal_alignment": "center",
-        "scroll": "ALWAYS",
+        "horizontal_alignment": "left",
+        # "scroll": "ALWAYS",
         "wrap": "true"
     },
     "_4015": {
@@ -57,9 +57,9 @@ styles={
         "size": 15.0,
         "text_align": "left",
         # "tooltip": ""Text"",
-        "value": "Profesor: Lic Ramon",
+        "value": "Prof: Lic. Magalys Lamela Carabeo.\nProf: Lic. Ramón Aves Rodrigo.",
         "weight": "normal",
-        "width": "240"
+        # "width": "240"
     },
     "_4003": {
         # "WIDGET_NAME": "CONTAINER_TEXT",
@@ -67,8 +67,8 @@ styles={
         "bgcolor": "transparent",
         "border": {"l":{"w":0,"c":"transparent","sa":"null"},"t":{"w":0,"c":"transparent","sa":"null"},"r":{"w":0,"c":"transparent","sa":"null"},"b":{"w":0,"c":"transparent","sa":"null"}},
         "height": "150",
-        "ink": "true",
-        "ink_color": "red",
+        # "ink": "true",
+        # "ink_color": "red",
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":6,"t":6,"r":6,"b":6},
         # "tooltip": ""Text: 4"",
@@ -79,7 +79,7 @@ styles={
         "size": 13.0,
         "text_align": "start",
         # "tooltip": ""Text"",
-        "value": "¡Estás invitado! Únase a nosotros para una sesión informativa sobre las mejores prácticas para los camareros. Aprenda habilidades esenciales, consejos para un servicio excepcional y cómo mejorar la experiencia gastronómica. ¡No se pierda esta oportunidad de elevar su carrera!"
+        "value": "¡Estás invitado! Únase a nosotros para que aprenda sobre las mejores prácticas para los Dependientes Gastronómicos del turismo. Aprenda habilidades esenciales, consejos para un servicio excepcional y cómo mejorar la experiencia gastronómica. ¡No se pierda esta oportunidad de elevar su carrera y ser un profesional en la materia !."
     },
     "_4007": {
         # "WIDGET_NAME": "CONTAINER_ROW",
@@ -102,16 +102,16 @@ styles={
         "border": {"l":{"w":4,"c":"black12","sa":"null"},"t":{"w":4,"c":"black12","sa":"null"},"r":{"w":4,"c":"black12","sa":"null"},"b":{"w":4,"c":"black12","sa":"null"}},
         "border_radius": {"bl":47.0,"br":47.0,"tl":47.0,"tr":47.0},
         "height": "",
-        "ink": "true",
-        "ink_color": "cyan",
+        # "ink": "true",
+        # "ink_color": "cyan",
         "margin": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},
-        "padding": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},
+        "padding": {"l":4,"t":0.0,"r":0.0,"b":0.0},
         # "tooltip": ""Row: 10"",
         "width": "280"
     },
     "_4028": {
         # "WIDGET_NAME": "CONTENT_ROW",
-        "scroll": "ALWAYS"
+        # "scroll": "ALWAYS",
     },
     "_4031": {
         # "WIDGET_NAME": "CONTAINER_ICON",
@@ -120,8 +120,8 @@ styles={
         "border": {"l":{"w":0,"c":"transparent","sa":"null"},"t":{"w":0,"c":"transparent","sa":"null"},"r":{"w":0,"c":"transparent","sa":"null"},"b":{"w":0,"c":"transparent","sa":"null"}},
         "border_radius": {"bl":47.0,"br":47.0,"tl":47.0,"tr":47.0},
         "height": "",
-        "ink": "true",
-        "ink_color": "red",
+        # "ink": "true",
+        # "ink_color": "red",
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":6,"t":6,"r":6,"b":6},
         # "tooltip": ""Icon: 11"",
@@ -129,6 +129,7 @@ styles={
     },
     "_4032": {
         # "WIDGET_NAME": "CONTENT_ICON",
+        # "disable":"true",
         "name": "arrow_forward_ios_outlined",
         # "tooltip": ""Icon"",
     },

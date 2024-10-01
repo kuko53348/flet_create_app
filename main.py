@@ -1,10 +1,10 @@
 import flet as ft
-
 from builder.app_manager  import builder_app ,GLOBAL_VAR
+
 # from controls.app_style_manager import styles
 from controls.app_screen_manager import screens
 from controls.views.nav_bar.nav_bar import  bottom_appbar
-from controls.views.nav_bar.nav_drawer import  nav_drawer
+from controls.views.nav_bar.nav_drawer import  NavDrawerWidget
 
 def change_size(page_width: float, page_height: float):
     #: RESIZE HEIGHT FROM SCREEN
@@ -23,6 +23,7 @@ def check_menu_bar(main_page):
 
 
 def main(page: ft.Page):
+    # GLOBAL_VAR(set_global_var={'main_page': page})
 
     # page.scroll               = "HIDDEN"              #: AUTO ADAPTIVE ALWAYS HIDDEN
     page.vertical_alignment   = ft.MainAxisAlignment.CENTER
@@ -57,11 +58,10 @@ def main(page: ft.Page):
     # all_screens = tmp_screens.get('show_all_screens')                           #: return one dict with all  screens inside
     show_screen = tmp_screens.get('builder_app')                                #: return exactly first screen
 
-
     #: UPDATE SIZE OF MAIN PHGONE SCREEN
     show_screen.height = page.window.height
     show_screen.width  = page.window.width
-    page.on_resized     = lambda _: change_size(page_width=page.window.width, page_height=page.window.height)
+    page.on_resized    = lambda _: change_size(page_width=page.window.width, page_height=page.window.height)
 
     #: WALLPAPER
     # page.decoration   = ft.BoxDecoration(image=ft.DecorationImage(src="exemple.jpg",fit=ft.ImageFit.COVER,opacity=0.2,), #: CONTAIN, COVER, FILL, FIT_HEIGHT, FIT_WIDTH, SCALE_DOWN
@@ -77,50 +77,24 @@ def main(page: ft.Page):
     #: WE SET HOT SCOPE VAR
     # trailing=ft.Icon(ft.icons.WB_SUNNY_OUTLINED),
     current_screen: dict = GLOBAL_VAR(get_global_var='current_screen')
-    page.appbar = ft.AppBar(
-        # bgcolor=ft.colors.WHITE12,
-        # bgcolor=ft.LinearGradient( begin=ft.alignment.top_center,end=ft.alignment.bottom_center,colors=[ft.colors.BLUE, ft.colors.YELLOW],),
-
-        # bgcolor=ft.colors.WHITE12,
-        leading=ft.Icon(
-                        # name=ft.icons.LIQUOR_ROUNDED,
-                        name=ft.icons.LOCAL_RESTAURANT,
-                                # icon_size=14,
-                                # on_click=lambda _:print('hello')
-                                ),
-        # # leading_width=40,
-        title=ft.Text(
-                        value="Restauracion",
-                        # size=14
-                        ),
-        # elevation=24,
-        center_title=False,
-        # toolbar_height=40,
-        # bgcolor=ft.colors.BLACK12,t
-        # check_data: bool
-
-        actions=[
-
-            ft.IconButton(
-                            icon=ft.icons.TABLE_ROWS_ROUNDED,
-                            # icon_size=14,
-                            on_click=lambda e: check_menu_bar(main_page=page)
-                            ),
-            # ft.IconButton(ft.icons.FILTER_3,icon_size=14),
-            # ft.PopupMenuButton(
-            #     items=[
-            #         ft.PopupMenuItem(text="Settings"),
-            #         # ft.PopupMenuItem(),  # divider
-            #         # ft.PopupMenuItem(
-            #         #     text="Checked item", checked=False,height=20
-            #         #     # on_click=check_item_clicked
-            #         # ),
-            #     ]
-            # ),
-        ],
-    )
+    # page.appbar = ft.AppBar(
+    #                         title=ft.Text(value="Restauracion",),
+    #                         leading=ft.Icon(name=ft.icons.COFFEE_ROUNDED,),
+    #                         center_title=False,
+    #                         actions=[ft.IconButton(icon=ft.icons.TABLE_ROWS_ROUNDED,on_click=lambda e: check_menu_bar(main_page=page)),],
+    #                         )
     #  NAV DRAWER APP VAR
-    page.drawer=nav_drawer
+    # print(dir(page))
+    # if current_screen == "first_screen":
+    page.appbar = ft.AppBar(
+                            visible=False,
+                            title=ft.Text(value="Restauracion",),
+                            leading=ft.Icon(name=ft.icons.COFFEE_ROUNDED,),
+                            center_title=False,
+                            actions=[ft.IconButton(icon=ft.icons.TABLE_ROWS_ROUNDED,on_click=lambda e: check_menu_bar(main_page=page)),],
+                            )
+    page.drawer=NavDrawerWidget(main_widget=page)
+
     #  NAV APP VAR
     page.bottom_appbar = bottom_appbar
 

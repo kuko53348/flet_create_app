@@ -5,7 +5,15 @@ from builder.app_manager  import builder_app ,GLOBAL_VAR
 
 
 def event_bottom_appbar(data): # ID: main_screen, event_Iconbutton
-    # print(f"Demo App: {data} event_Iconbutton")
+    # RESET DEFOUD FALSE SECOND SCREEN
+    GLOBAL_VAR(set_global_var={
+                                'secundary_menu_show':False,
+                                # 'show_off':True,
+
+                                }
+
+        )
+
     list_screen: dict = {
                 "0":"second_screen",
                 "1":"first_screen",
@@ -13,16 +21,23 @@ def event_bottom_appbar(data): # ID: main_screen, event_Iconbutton
 
     }
     current_screen = GLOBAL_VAR(get_global_var='current_screen')
-    # print(current_screen)
+    # show_off = GLOBAL_VAR(get_global_var='show_off')
+    # show_off.visible=False
+    # show_off.update()
 
     if data == "1":
         if not current_screen == 'first_screen':
+
             got_to_screen(to_screen=list_screen.get(data) ,style='burble' ,time_style=0.8 )
     if data == "0":
+
         if current_screen == 'doc_screen':
             got_to_screen(to_screen='second_screen' ,style='burble' ,time_style=0.8 )
+
         elif current_screen == 'second_screen':
             got_to_screen(to_screen='first_screen' ,style='burble' ,time_style=0.8 )
+
+    GLOBAL_VAR(set_global_var={'show_off':True})
 
     bottom_appbar.content.content.selected_index=1
     bottom_appbar.update()

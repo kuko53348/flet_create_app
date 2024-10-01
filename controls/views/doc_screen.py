@@ -14,8 +14,10 @@ phone_style_widget = {
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
         "width": "460",
-        "image_src": "fondo_doc.jpeg",
-        "image_fit": "cover"
+        "image": {
+                'src':"fondo_doc.jpeg",
+                "fit": "cover"
+                },
     },
     "MAIN_EFFECTS_CONTAINER": {
         "alignment": {"x":0,"y":0},
@@ -43,6 +45,7 @@ class doc_screen(ft.Container):
         #: HEADER TEXT CONTAINER
         self.header_text =  ft.Text(
                                 **self.dict_style('_4024'),
+                                size=GLOBAL_VAR(get_global_var="text_size"),
                                 value=my_doc(GLOBAL_VAR(get_global_var='documentation'))
                                 # on_click= lambda _: event_4024(data='_4024'),
                                 )

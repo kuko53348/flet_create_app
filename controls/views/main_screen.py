@@ -12,9 +12,12 @@ phone_style_widget = {
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
         "width": "460",
-        "image_src": "first_screen.jpeg",
-        "image_opacity": "0.61",
-        "image_fit": "cover"
+        # "image": ft.Image(src="first_screen.jpeg",opacity=0.61,fit="cover"),
+        "image": 	{
+        			'src':"first_screen.jpeg",
+			        "opacity": "0.61",
+			        "fit": "cover"
+			        }
     },
     "MAIN_EFFECTS_CONTAINER": {
         "alignment": {"x":0,"y":0},
@@ -88,7 +91,7 @@ class main_screen(ft.Container):
 
 						ft.Container( # Icon
 								**self.dict_style('_4031'),
-								on_click= lambda _: event_4032(data='_4032'),
+								# on_click= lambda _: event_4032(data='_4032'),
 								content= ft.Icon(
 										**self.dict_style('_4032'),
 										# on_click= lambda _: event_4032(data='_4032'),

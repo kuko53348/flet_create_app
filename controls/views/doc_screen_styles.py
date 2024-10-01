@@ -80,7 +80,7 @@ styles={
     "_4008": {
         # "WIDGET_NAME": "CONTENT_TEXT",
         "expand": "1",
-        "size": 18,
+        # "size": 18,
         "text_align": "left",
         # "tooltip": ""Text"",
         # "value": "Surgimiento",
@@ -182,7 +182,7 @@ styles={
         "disabled": "false",
         "expand": "1",
         "height": "",
-        "size": 14.0,
+        # "size": 14.0,
         "text_align": "left",
         # "tooltip": ""Text"",
         "width": ""

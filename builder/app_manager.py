@@ -48,7 +48,6 @@ def builder_app(screen, main_page):
     """ Will return a dictionary with all screens and main screen contents"""
 
     GLOBAL_VAR(set_global_var={'all_screens':screen,'main_page':main_page})
-
     tmp_data = {
                 'show_all_screens': screen.keys(),
                 'builder_app' :screen.get('main_screen'),
@@ -78,7 +77,7 @@ def got_to_screen(to_screen: str, style: str='ring', time_style: float=10 ):
     # print(main_page.update())
     # if not DATA_GLOBAL.get('main_tab_bar'):
     #     DATA_GLOBAL['main_tab_bar']=True
-
+    # print('.............',main_page)
 
     from_screen: dict = all_screens.get(current_screen)
     next_screen: dict = all_screens.get(to_screen)
@@ -120,6 +119,7 @@ def got_to_screen(to_screen: str, style: str='ring', time_style: float=10 ):
     next_screen.update()
 
     main_page.bottom_appbar.visible=True
+    main_page.appbar.visible=True
 
     if not time_style == 0.0 or time_style == 0:
         main_page.overlay.clear()

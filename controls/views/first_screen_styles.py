@@ -26,8 +26,11 @@ styles={
         "bgcolor": "black54",
         "border": {"l":{"w":4,"c":"black54","sa":"null"},"t":{"w":4,"c":"black54","sa":"null"},"r":{"w":4,"c":"black54","sa":"null"},"b":{"w":4,"c":"black54","sa":"null"}},
         "border_radius": {"bl":43.0,"br":43.0,"tl":43.0,"tr":43.0},
-        "image_opacity": "1.0",
-        "image_src": "capitulo_1.jpeg",
+        "image": {
+                'src':"capitulo_1.jpeg",
+                "opacity":"1.0",
+                },
+
         "ink": "true",
         "ink_color": "yellow",
         "margin": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},
@@ -76,7 +79,7 @@ styles={
         "size": 10.0,
         "text_align": "right",
         # "tooltip": ""Text"",
-        "value": "Indtroduccion a la Gastronomia",
+        "value": "Introducción a la Gastronomía",
         "weight": "normal"
     },
     "_3995": {
@@ -85,8 +88,10 @@ styles={
         "bgcolor": "black54",
         "border": {"l":{"w":4,"c":"black54","sa":"null"},"t":{"w":4,"c":"black54","sa":"null"},"r":{"w":4,"c":"black54","sa":"null"},"b":{"w":4,"c":"black54","sa":"null"}},
         "border_radius": {"bl":43.0,"br":43.0,"tl":43.0,"tr":43.0},
-        "image_opacity": "1.0",
-        "image_src": "capitulo_2.jpeg",
+        "image": {
+                'src':"capitulo_2.jpeg",
+                "opacity":"1.0",
+                },
         "ink": "true",
         "ink_color": "yellow",
         "margin": {"l":{"l":2.0,"t":2.0,"r":2.0,"b":2.0},"t":{"l":2.0,"t":2.0,"r":2.0,"b":2.0},"r":{"l":2.0,"t":2.0,"r":2.0,"b":2.0},"b":{"l":2.0,"t":2.0,"r":2.0,"b":2.0}},
@@ -136,7 +141,7 @@ styles={
         "size": 10.0,
         "text_align": "right",
         # "tooltip": ""Text"",
-        "value": "Utensilios de trabajo y servicios"
+        "value": "Utensilios de Trabajo y Servicios"
     },
     "_3999": {
         # "WIDGET_NAME": "CONTAINER_COLUMN",
@@ -144,8 +149,10 @@ styles={
         "bgcolor": "black54",
         "border": {"l":{"w":4,"c":"black54","sa":"null"},"t":{"w":4,"c":"black54","sa":"null"},"r":{"w":4,"c":"black54","sa":"null"},"b":{"w":4,"c":"black54","sa":"null"}},
         "border_radius": {"bl":43.0,"br":43.0,"tl":43.0,"tr":43.0},
-        "image_opacity": "1.0",
-        "image_src": "capitulo_3.jpeg",
+        "image": {
+                'src':"capitulo_3.jpeg",
+                "opacity":"1.0",
+                },
         "ink": "true",
         "ink_color": "yellow",
         "margin": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},
@@ -194,7 +201,7 @@ styles={
         "size": 10.0,
         "text_align": "right",
         # "tooltip": ""Text"",
-        "value": "Funsiones y etapa Tarea diaria"
+        "value": "Funciones y Etapa Tarea Diaria"
     },
     "_4003": {
         # "WIDGET_NAME": "CONTAINER_COLUMN",
@@ -202,8 +209,10 @@ styles={
         "bgcolor": "black54",
         "border": {"l":{"w":4,"c":"black54","sa":"null"},"t":{"w":4,"c":"black54","sa":"null"},"r":{"w":4,"c":"black54","sa":"null"},"b":{"w":4,"c":"black54","sa":"null"}},
         "border_radius": {"bl":43.0,"br":43.0,"tl":43.0,"tr":43.0},
-        "image_opacity": "1.0",
-        "image_src": "capitulo_4.jpeg",
+        "image": {
+                'src':"capitulo_4.jpeg",
+                "opacity":"1.0",
+                },
         "ink": "true",
         "ink_color": "yellow",
         "margin": {"l":0.0,"t":0.0,"r":0.0,"b":0.0},
@@ -253,7 +262,7 @@ styles={
         "size": 10.0,
         "text_align": "right",
         # "tooltip": ""Text"",
-        "value": "Normas basicas y preferencias"
+        "value": "Normas básicas y Preferencias"
     },
     "_4007": {
         # "WIDGET_NAME": "CONTAINER_COLUMN",
@@ -261,7 +270,10 @@ styles={
         "bgcolor": "black54",
         "border": {"l":{"w":4,"c":"black54","sa":"null"},"t":{"w":4,"c":"black54","sa":"null"},"r":{"w":4,"c":"black54","sa":"null"},"b":{"w":4,"c":"black54","sa":"null"}},
         "border_radius": {"bl":43.0,"br":43.0,"tl":43.0,"tr":43.0},
-        "image_src": "capitulo_5.jpeg",
+        "image": {
+                'src':"capitulo_5.jpeg",
+                # "opacity":"1.0",
+                },
         "ink": "true",
         "ink_color": "yellow",
         "padding": {"l":12.0,"t":12.0,"r":12.0,"b":12.0},
@@ -309,7 +321,7 @@ styles={
         "size": 10.0,
         "text_align": "right",
         # "tooltip": ""Text"",
-        "value": "Tipos de servicios e instalaciones"
+        "value": "Tipos de Servicios e Instalaciones"
     },
     "_4011": {
         # "WIDGET_NAME": "CONTAINER_COLUMN",
@@ -317,7 +329,10 @@ styles={
         "bgcolor": "black54",
         "border": {"l":{"w":4,"c":"black54","sa":"null"},"t":{"w":4,"c":"black54","sa":"null"},"r":{"w":4,"c":"black54","sa":"null"},"b":{"w":4,"c":"black54","sa":"null"}},
         "border_radius": {"bl":43.0,"br":43.0,"tl":43.0,"tr":43.0},
-        "image_src": "capitulo_6.jpeg",
+        "image": {
+                'src':"capitulo_6.jpeg",
+                # "opacity":"1.0",
+                },
         "ink": "false",
         "ink_color": "yellow",
         "padding": {"l":12.0,"t":12.0,"r":12.0,"b":12.0},
@@ -365,7 +380,7 @@ styles={
         "size": 10.0,
         "text_align": "right",
         # "tooltip": ""Text"",
-        "value": "Clasificacion de Vinos y Maridajes"
+        "value": "Clasificación de Vinos y Maridajes"
     },
     "_4015": {
         # "WIDGET_NAME": "CONTAINER_COLUMN",
@@ -373,7 +388,10 @@ styles={
         "bgcolor": "black54",
         "border": {"l":{"w":4,"c":"black54","sa":"null"},"t":{"w":4,"c":"black54","sa":"null"},"r":{"w":4,"c":"black54","sa":"null"},"b":{"w":4,"c":"black54","sa":"null"}},
         "border_radius": {"bl":43.0,"br":43.0,"tl":43.0,"tr":43.0},
-        "image_src": "capitulo_7.jpeg",
+        "image": {
+                'src':"capitulo_7.jpeg",
+                # "opacity":"1.0",
+                },
         "ink": "true",
         "ink_color": "yellow",
         "padding": {"l":12.0,"t":12.0,"r":12.0,"b":12.0},
@@ -421,7 +439,7 @@ styles={
         "size": 10.0,
         "text_align": "right",
         # "tooltip": ""Text"",
-        "value": "Aervicio de fuente de Soda"
+        "value": "Servicio de Fuente de Soda"
     },
     "_4019": {
         # "WIDGET_NAME": "CONTAINER_COLUMN",
@@ -429,7 +447,10 @@ styles={
         "bgcolor": "black54",
         "border": {"l":{"w":4,"c":"black54","sa":"null"},"t":{"w":4,"c":"black54","sa":"null"},"r":{"w":4,"c":"black54","sa":"null"},"b":{"w":4,"c":"black54","sa":"null"}},
         "border_radius": {"bl":43.0,"br":43.0,"tl":43.0,"tr":43.0},
-        "image_src": "capitulo_8.jpeg",
+        "image": {
+                'src':"capitulo_8.jpeg",
+                # "opacity":"1.0",
+                },
         "ink": "true",
         "ink_color": "yellow",
         "padding": {"l":12.0,"t":12.0,"r":12.0,"b":12.0},
@@ -457,7 +478,7 @@ styles={
         # "WIDGET_NAME": "CONTENT_TEXT",
         "size": 21.0,
         # "tooltip": ""Text"",
-        "value": "Capitulo 8",
+        "value": "Índice",
         "weight": "bold"
     },
     "_4099": {
@@ -477,7 +498,7 @@ styles={
         "size": 10.0,
         "text_align": "right",
         # "tooltip": ""Text"",
-        "value": "Documentacion Utilizada"
+        "value": "Índices organizados de los Capítulos"
     },
     "_4023": {
         # "WIDGET_NAME": "CONTAINER_COLUMN",

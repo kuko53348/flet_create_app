@@ -72,7 +72,7 @@ styles = {
     },
     "_4148": {
         # "WIDGET_NAME": "CONTENT_ICONBUTTON",
-        "icon": "swipe_right_alt",
+        "icon": "ads_click_outlined",
         # "tooltip": ""Accept""
     },
     "_4151": {
@@ -106,9 +106,11 @@ styles = {
         "border": {"l": {"w": 0, "c": "transparent", "sa": "null"}, "t": {"w": 0, "c": "transparent", "sa": "null"}, "r": {"w": 0, "c": "transparent", "sa": "null"}, "b": {"w": 0, "c": "transparent", "sa": "null"}},
         "border_radius": {"bl": 43.0, "br": 43.0, "tl": 43.0, "tr": 43.0},
         "height": "",
-        "image_fit": "cover",
-        "image_opacity": "0.020000000000000018",
-        "image_src": "image_menu.jpeg",
+        "image": {
+                'src':"image_menu.jpeg",
+                "opacity":"0.020000000000000018",
+                "fit": "cover",
+                },
         "ink": "true",
         "ink_color": "yellow",
         "margin": {"l": 6.0, "t": 6.0, "r": 6.0, "b": 6.0},
