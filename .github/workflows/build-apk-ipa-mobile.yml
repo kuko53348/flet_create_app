@@ -21,7 +21,7 @@ env:
   BUILD_VERSION: 1.2.0
   PYTHON_VERSION: 3.12.2
   FLUTTER_VERSION: 3.24.3
-  PROJECT_NAME: 'Servicios Gastronomicos'
+  PROJECT_NAME: Servicios&nbspGastronomicos
   
 jobs:
   build-apk:
@@ -55,7 +55,7 @@ jobs:
     - name: Flet Build APK
       run: |
         flutter config --no-analytics
-        flet build apk --verbose --splash-dark-color=#333333 --build-number=$BUILD_NUMBER --project=$PROJECT_NAME --build-version=$BUILD_VERSION 
+        flet build apk --verbose --splash-dark-color=#333333 --build-number=$BUILD_NUMBER --build-version=$BUILD_VERSION --project=$PROJECT_NAME
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4.3.4
