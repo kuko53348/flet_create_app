@@ -88,7 +88,7 @@ def main(page: ft.Page):
     # if current_screen == "first_screen":
     page.appbar = ft.AppBar(
                             visible=False,
-                            title=ft.Text(value="Restauracion",),
+                            title=ft.Text(value="Restauración",),
                             leading=ft.Icon(name=ft.icons.COFFEE_ROUNDED,),
                             center_title=False,
                             actions=[ft.IconButton(icon=ft.icons.TABLE_ROWS_ROUNDED,on_click=lambda e: check_menu_bar(main_page=page)),],
