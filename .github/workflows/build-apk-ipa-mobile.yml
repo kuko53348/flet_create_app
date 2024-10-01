@@ -21,7 +21,8 @@ env:
   BUILD_VERSION: 1.2.0
   PYTHON_VERSION: 3.12.2
   FLUTTER_VERSION: 3.24.3
-  PROJECT_NAME: Servicios Gastronomicos
+  PROJECT_NAME: Servicios Gastronómicos
+
   
 jobs:
   build-apk:
@@ -90,7 +91,7 @@ jobs:
     - name: Flet Build Windows
       run: |
         flutter config --no-analytics
-        flet build windows --verbose --no-rich-output --build-number=$env:BUILD_NUMBER --build-version=$env:BUILD_VERSION --project=$PROJECT_NAME
+        flet build windows --verbose --no-rich-output --build-number=$env:BUILD_NUMBER --build-version=$env:BUILD_VERSION --project="$PROJECT_NAME"
 
     - name: Upload Windows Artifact
       uses: actions/upload-artifact@v4.3.4

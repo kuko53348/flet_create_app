@@ -58,7 +58,7 @@ class NavDrawerWidget(ft.NavigationDrawer):
                         margin          = ft.margin.all(8),
                         alignment       = ft.alignment.center,
                         content=ft.Text(
-                                    value             = "Servicios Gastronomicos",
+                                    value             = "Servicios Gastronómicos",
                                     text_align        = ft.TextAlign.CENTER,
                                     weight            = ft.FontWeight.BOLD,
                                     # italic            = True,
