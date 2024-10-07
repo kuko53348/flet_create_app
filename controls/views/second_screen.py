@@ -1,10 +1,10 @@
 #: MAIN WIDGET SCREEN CLASS
 import flet as ft
+from ..app_screen_db import GLOBAL_VAR
 
 from .second_screen_styles import styles
 from .second_screen_events import *
 from .keys_db import index_database
-from ..app_screen_db import GLOBAL_VAR
 
 #: STYLE TO MAIN SCREEN WIDGET
 phone_style_widget = {
@@ -76,14 +76,14 @@ class second_screen(ft.Container):
                                     self.show_secundary_menu,
                     ],),),
 
-        ft.Container(  # Container_Column
-            **self.dict_style('_4135'),
-            content= ft.Column( # Column
-                    **self.dict_style('_4136'),
-                    controls= [
+        # ft.Container(  # Container_Column
+        #     **self.dict_style('_4135'),
+        #     content= ft.Column( # Column
+        #             **self.dict_style('_4136'),
+        #             controls= [
 
-                ],
-        ),), #// CLOSE LAYER 0
+        #         ],
+        # ),), #// CLOSE LAYER 0
         ]
 
         #: MAIN PHONE CONTAINER
@@ -103,6 +103,8 @@ class second_screen(ft.Container):
         self.tmp_menu_cap = index_database.get(self.topic)
         self.check_secundary_menu = GLOBAL_VAR(get_global_var='secundary_menu_show')
 
+
+        # SHOW_DICT()
         if not self.check_secundary_menu:
             for tmp_keys in self.tmp_menu_cap:
                 self.builder_main_menu=  ft.Container(  # Container_Row

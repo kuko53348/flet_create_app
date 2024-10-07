@@ -117,14 +117,14 @@ class doc_screen(ft.Container):
                                 content=self.header_text),
 
         ],),),
-        ft.Container(  # Container_Column
-            **self.dict_style('_3995'),
-            content= ft.Column( # Column
-                    **self.dict_style('_3996'),
-                    controls= [
+        # ft.Container(  # Container_Column
+        #     **self.dict_style('_3995'),
+        #     content= ft.Column( # Column
+        #             **self.dict_style('_3996'),
+        #             controls= [
 
-                ],
-        ),), #// CLOSE LAYER 0
+        #         ],
+        # ),), #// CLOSE LAYER 0
         ]
 
         #: MAIN PHONE CONTAINER

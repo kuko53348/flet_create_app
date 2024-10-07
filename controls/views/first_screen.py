@@ -253,14 +253,14 @@ class first_screen(ft.Container):
 
                                 ],),), #// LAYER 1 END
         ],),),
-        ft.Container(  # Container_Column
-            **self.dict_style('_4023'),
-            content= ft.Column( # Column
-                    **self.dict_style('_4024'),
-                    controls= [
+        # ft.Container(  # Container_Column
+        #     **self.dict_style('_4023'),
+        #     content= ft.Column( # Column
+        #             **self.dict_style('_4024'),
+        #             controls= [
 
-                ],
-        ),), #// CLOSE LAYER 0
+        #         ],
+        # ),), #// CLOSE LAYER 0
         ]
 
         #: MAIN PHONE CONTAINER

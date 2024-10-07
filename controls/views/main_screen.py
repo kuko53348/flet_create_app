@@ -5,13 +5,15 @@ from .main_screen_styles import styles
 from .main_screen_events import *
 
 #: STYLE TO MAIN SCREEN WIDGET
+
 phone_style_widget = {
     "MAIN_CONTAINER": {
         "alignment": {"x":0,"y":0},
-        "height": "625",
+        "height": "725",
+        "expand":True,
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
-        "width": "460",
+        # "width": "460",
         # "image": ft.Image(src="first_screen.jpeg",opacity=0.61,fit="cover"),
         "image": 	{
         			'src':"first_screen.jpeg",
@@ -26,8 +28,11 @@ phone_style_widget = {
         "padding": {"l":16,"t":0,"r":16,"b":0}
     },
     "COLUMN_CONTAINER": {
-        "scroll": "HIDDEN",
-        "spacing": "2"
+        # "scroll": "HIDDEN",
+        # "expand":True,
+        "alignment":ft.MainAxisAlignment.SPACE_EVENLY,              # horizontal <=> START,CENTER,END SPACE_BETWEEN SPACE_AROUND SPACE_EVENLY
+        "horizontal_alignment":ft.CrossAxisAlignment.CENTER,        # vertical       START,CENTER END
+        "spacing": "2",
     }
 }
 

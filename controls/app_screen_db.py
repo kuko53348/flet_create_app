@@ -1,9 +1,11 @@
 
 #: DICT REFERENCE TO KNOW ALL WIDGET IN GLOVAL VAR
 DATA_GLOBAL: dict = {
+                    'main_page':"",
+
                     'secundary_menu_show':False,
                     'show_off':True,
-                    'text_size':18,
+                    'text_size':14,
                }
 
 def GLOBAL_VAR(
