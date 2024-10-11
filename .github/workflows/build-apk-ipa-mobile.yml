@@ -19,7 +19,7 @@ env:
   # https://flet.dev/docs/publish#versioning
   BUILD_NUMBER: 3
   BUILD_VERSION: 1.2.0
-  PYTHON_VERSION: 3.13.0
+  PYTHON_VERSION: 3.12.2
   FLUTTER_VERSION: 3.24.3
   PROJECT_NAME: Servicios Gastronómicos
 
