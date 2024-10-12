@@ -16,7 +16,7 @@ styles={
     "_3988": {
         # "WIDGET_NAME": "CONTENT_GRIDVIEW",
         "padding": {"l":6,"t":6,"r":6,"b":6},
-        "runs_count": "2",
+        # "runs_count": "3",
         "run_spacing": "9.0",
         "spacing": 9.0
     },
@@ -505,7 +505,7 @@ styles={
         "alignment": {"x":0,"y":0},
         "bgcolor": "transparent",
         "border": {"l":{"w":0,"c":"transparent","sa":"null"},"t":{"w":0,"c":"transparent","sa":"null"},"r":{"w":0,"c":"transparent","sa":"null"},"b":{"w":0,"c":"transparent","sa":"null"}},
-        "height": "140",
+        "height": "4",
         "ink": "true",
         "ink_color": "yellow",
         "padding": {"l":6,"t":6,"r":6,"b":6},

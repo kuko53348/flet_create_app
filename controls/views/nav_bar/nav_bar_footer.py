@@ -10,17 +10,18 @@ class botton_bar(ft.BottomAppBar):
         super().__init__()
         self.bgcolor=ft.colors.TRANSPARENT
         # self.height = 200
-        self.offset = (0,0.1)
+        # self.offset = (0,0.1)
+        self.offset = (0,0)
     def build(self):
         self.content=ft.Container(
                         ink=False,
-                        bgcolor="BLACK,0.8",
+                        bgcolor="White,0.03",
                         alignment=ft.alignment.center,
                         # width         = 150,
                         border_radius=ft.border_radius.all(32),
                         padding=0,
                         margin=0,
-                        border= ft.border.all(4, "WHITE,0.02"),
+                        border= ft.border.all(4, "WHITE,0.04"),
                         blur=(18, 18),
                         content=ft.CupertinoSlidingSegmentedButton(
                             selected_index=2,
@@ -71,10 +72,11 @@ class botton_bar(ft.BottomAppBar):
                 got_to_screen(to_screen='second_screen' ,style='burble' ,time_style=0.8 )
 
         if data == "1":
-            got_to_screen(to_screen='first_screen' ,style='burble' ,time_style=0.8 )
+            got_to_screen(to_screen='first_screen' ,style='burble' ,time_style=0.8 ,rotation=True)
 
         time.sleep(0.3)
 
         GLOBAL_VAR(set_global_var={'show_off':True})
         self.content.content.selected_index=2
         self.content.update()
+

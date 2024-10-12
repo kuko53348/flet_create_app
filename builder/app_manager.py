@@ -9,9 +9,13 @@ class got_to_screen():
                 to_screen= 'screen_name' ,
                 style='ring' ,
                 time_style=0.8,
-                page = ""
+                page = "",
+                rotation: bool=False,
         ):
         super().__init__()
+        # GET ROTATION MODULE ACCEPT
+        self.rotation = rotation
+
         # GET BY DEFOULD MAIN SCREEN FIRST
         self.main_page = GLOBAL_VAR(get_global_var="main_page")
         self.main_page.on_route_chage=self.change_route(to_screen)
@@ -23,6 +27,14 @@ class got_to_screen():
         self.main_page.controls.clear()
         self.main_page.controls.append(GLOBAL_VAR(get_global_var=path))
 
+        # ADD SPACE IN FOOTER
+        # self.main_page.controls.append(ft.Container(height=300,bgcolor="red"))
+
         # SET VISIBLE APPBAR AND FOOTER BAR
         self.main_page.appbar.visible=True
         self.main_page.navigation_bar.visible=True
+
+        if self.rotation:
+            GLOBAL_VAR(set_global_var={'rotation': True})
+        else:
+            GLOBAL_VAR(set_global_var={'rotation': False})

@@ -12,7 +12,7 @@ styles={
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":6,"t":6,"r":6,"b":6},
         # "tooltip": ""Text: 1"",
-        "width": "450"
+        "width": "640"
     },
     "_3992": {
         # "WIDGET_NAME": "CONTENT_TEXT",
@@ -36,9 +36,9 @@ styles={
     },
     "_4000": {
         # "WIDGET_NAME": "CONTENT_COLUMN",
-        "horizontal_alignment": "left",
+        "horizontal_alignment": "center",
         # "scroll": "ALWAYS",
-        "wrap": "true"
+        # "wrap": "true"
     },
     "_4015": {
         # "WIDGET_NAME": "CONTAINER_TEXT",
@@ -48,16 +48,26 @@ styles={
         "ink": "true",
         "ink_color": "red",
         "margin": {"l":0,"t":0,"r":0,"b":0},
-        "padding": {"l":6,"t":6,"r":6,"b":6},
+        "padding": {"l":6,"t":0,"r":6,"b":0},
         # "tooltip": ""Text: 7""
     },
     "_4016": {
         # "WIDGET_NAME": "CONTENT_TEXT",
         "height": "",
         "size": 15.0,
-        "text_align": "left",
+        "text_align": "center",
         # "tooltip": ""Text"",
-        "value": "Prof: Lic. Magalys Lamela Carabeo.\nProf: Lic. Ramón Aves Rodrigo.",
+        "value": "Prof: Lic. Magalys Lamela Carabeo.",
+        "weight": "normal",
+        # "width": "240"
+    },
+    "_8888": {
+        # "WIDGET_NAME": "CONTENT_TEXT",
+        "height": "",
+        "size": 15.0,
+        "text_align": "center",
+        # "tooltip": ""Text"",
+        "value": "Prof: Lic. Ramón Aves Rodrigo.",
         "weight": "normal",
         # "width": "240"
     },

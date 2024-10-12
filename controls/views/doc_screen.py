@@ -10,10 +10,11 @@ from ..app_screen_db import GLOBAL_VAR
 phone_style_widget = {
     "MAIN_CONTAINER": {
         "alignment": {"x":0,"y":0},
-        "height": "625",
+        "expand":True,
+        # "height": "625",
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
-        "width": "460",
+        # "width": "460",
         "image": {
                 'src':"fondo_doc.jpeg",
                 "fit": "cover"

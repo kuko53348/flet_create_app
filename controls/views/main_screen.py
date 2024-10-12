@@ -69,7 +69,13 @@ class main_screen(ft.Container):
 										**self.dict_style('_4016'),
 										# on_click= lambda _: event_4016(data='_4016'),
 								),),
-
+						ft.Container( # Text
+								**self.dict_style('_4015'),
+								# on_click= lambda _: event_4016(data='_4016'),
+								content= ft.Text(
+										**self.dict_style('_8888'),
+										# on_click= lambda _: event_4016(data='_4016'),
+								),),
 		],),),
 		ft.Container( # Text
 			**self.dict_style('_4003'),

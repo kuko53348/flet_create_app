@@ -10,13 +10,14 @@ from ..app_screen_db import GLOBAL_VAR
 phone_style_widget = {
     "MAIN_CONTAINER": {
         "alignment": {"x":0,"y":0},
-        "height": "625",
+        # "height": "625",
+        "expand":True,
         "margin": {"l":0,"t":0,"r":0,"b":0},
         "padding": {"l":0,"t":0,"r":0,"b":0},
-        "width": "460",
+        # "width": "460",
         "image": {
                 'src':"bg_first_screen.jpeg",
-                "opacity": "0.21999999999999997",
+                "opacity": "0.22",
                 "fit": "cover"
                 },
     },
@@ -29,7 +30,7 @@ phone_style_widget = {
     "COLUMN_CONTAINER": {
         "alignment": "center",
         "scroll": "HIDDEN",
-        "spacing": "2",
+        "spacing": "4",
         "horizontal_alignment": "center"
     }
 }
@@ -44,13 +45,17 @@ class first_screen(ft.Container):
 
     def build(self):
 
+        # print(self.data_page)
+
         #: MAIN PHONE CONTAINER
         self.content_box = [ 
 
         ft.Container(  # Container_GridView
             **self.dict_style('_3987'),
             content= ft.GridView( # GridView
+                    runs_count=2,
                     **self.dict_style('_3988'),
+
                     controls= [
 
                         ft.Container(  # Container_Column
@@ -263,6 +268,7 @@ class first_screen(ft.Container):
         # ),), #// CLOSE LAYER 0
         ]
 
+
         #: MAIN PHONE CONTAINER
         self.content = ft.Container(
                             **self.first_screen_style(code='MAIN_EFFECTS_CONTAINER'),
@@ -271,6 +277,26 @@ class first_screen(ft.Container):
                                         controls = self.content_box
                                         ),
                                 )
+
+
+        self.change_on_rotation()
+
+    def change_on_rotation(self):
+        # CHANGE SIZE OF WIDGET IF SCREEN IS MORE THAN ESTIMATION
+        self.data_page = GLOBAL_VAR(get_global_var="main_page")
+        self.data_page.on_resized=lambda _:self.change_screen(data_page=self.data_page)
+
+
+    def change_screen(self,data_page):
+        # CHANGE SIZE OF WIDGET IF SCREEN IS MORE THAN ESTIMATION
+        self.rotation = GLOBAL_VAR(get_global_var="rotation")
+
+        if self.rotation:
+            if data_page.width >= 600: self.content_box[0].content.runs_count = 3
+            else: self.content_box[0].content.runs_count = 2
+
+            data_page.on_resized=lambda _:self.change_screen(data_page=self.data_page)
+            self.content_box[0].content.update()
 
     def first_screen_style(self,code: str=''):
         #: SET MAIN STYLE WIDGET

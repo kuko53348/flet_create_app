@@ -1,39 +1,46 @@
 import flet as ft
 
+
 class screen_view(ft.Container):
+    """
+    SCREEN_VIEW:
+
+    MODEL BASIC OF EACH PAGE IN PAGE.CONTROL.
+    I MADE WORK WITH CONTROLS BECOUSE PAGE.VIEW STILL HAVE TO MAKE SOME
+    INTERNAL CHAGES TO SHOW NAV_DRAWER CORRECTLY, ONLY PERPOUSE
+    OF THIS CODE IS BUILD ONE CONTAINER BOX WITH ALL ANIMATION PRELOADED
+    AND MAY WORK WITH ANIMATION BETWEN SCREENS
+
+    """
 
     def __init__(self,
-                    page,
-                    bgcolor: str="Transparent",
-                    width: int=0,
-                    height: int=0,
-                    padding: tuple=(0,0,0,0),
-                    content=ft.Container(),
-                    alignment=ft.alignment.center,
-                    pos_hint: tuple=(0,0),
-                    visible: bool=True,
-        ):
+                 page,
+                 visible: bool = True,
+                 alignment=ft.alignment.center,
+                 bgcolor: str = "Transparent",
+                 width: int = 0,
+                 height: int = 0,
+                 padding: tuple = (0, 0, 0, 0),
+                 pos_hint: tuple = (0, 0),
+                 content=ft.Container(),
+                 ):
         super().__init__()
-         # MAIN PAGE
-        self.var_scope = 'text var'
-        self.page=page
-        self.content_widget = content
+        # MAIN PAGE
+        self.page = page
+
+        # ATTRIBUTES CONTAINER
+        self.visible = visible
+        self.height = self.page.height
+        self.width = self.page.width
         self.tmp_padding = padding
         self.tmp_offset = pos_hint
-        self.visible = visible
 
-        self.height =  self.page.height
-        self.height = self.page.height
         # self.expand          = True
-        self.ink             = False
-        self.bgcolor         = bgcolor
-        # self.padding = ft.padding.only(left=0,top=0,right=0,bottom=60)
-        # self.margin = ft.margin.all(24)
-        # self.padding         = ft.padding.only(
-        #                         left=self.tmp_padding[0],
-        #                         top=self.tmp_padding[1],
-        #                         right=self.tmp_padding[2],
-        #                         bottom=self.tmp_padding[3])  if self.tmp_padding == tuple() else ft.padding.all(self.tmp_padding)
+        self.ink = False
+        self.bgcolor = bgcolor
+        self.content_widget = content
+
+        # ANIMATION
 
         # OPCITY
         self.animate_opacity = 200
@@ -55,7 +62,7 @@ class screen_view(ft.Container):
         # BOUNCE
         self.animate = ft.animation.Animation(
             1000, ft.AnimationCurve.BOUNCE_OUT)
-        # ======================= ANIMATION
+
         # self.shadow = ft.BoxShadow(
         #     spread_radius=1,
         #     blur_radius=15,
@@ -65,4 +72,4 @@ class screen_view(ft.Container):
         # )
 
     def build(self):
-        self.content=self.content_widget
+        self.content = self.content_widget
