@@ -72,7 +72,11 @@ class botton_bar(ft.BottomAppBar):
                 got_to_screen(to_screen='second_screen' ,style='burble' ,time_style=0.8 )
 
         if data == "1":
-            got_to_screen(to_screen='first_screen' ,style='burble' ,time_style=0.8 ,rotation=True)
+            got_to_screen(  to_screen='first_screen' ,
+                            style='burble' ,
+                            time_style=0.8 ,
+                            # rotation=True
+                            )
 
         time.sleep(0.3)
 

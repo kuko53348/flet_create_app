@@ -90,5 +90,10 @@ def event_3991(data): # ID: main_screen, event_Text
     # print(f"Demo App: {data} event_Text")
 
     GLOBAL_VAR(set_global_var={'Capitulo':data,'show_off':'show_first_menu','current_screen':data})
-    got_to_screen(to_screen= 'second_screen' ,style='burble' ,time_style=0.8 ,rotation=False )
+    got_to_screen(
+                    to_screen= 'second_screen' ,
+                    style='burble' ,
+                    time_style=0.8 ,
+                    # rotation=False
+                    )
     # GLOBAL_VAR(set_global_var={"activate_rotation":False})

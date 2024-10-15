@@ -179,7 +179,7 @@ styles = {
         "margin": {"l": 0, "t": 0, "r": 0, "b": 0},
         "padding": {"l": 6, "t": 6, "r": 6, "b": 6},
         "expand":True,
-        "bgcolor": "white,0.01",
+        # "bgcolor": "white,0.01",
         # "tooltip": ""Text: 46""
     },
     "_4168": {
