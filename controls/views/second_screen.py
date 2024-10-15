@@ -106,6 +106,7 @@ class second_screen(ft.Container):
 
 
         # SHOW_DICT()
+        # print(self.check_secundary_menu)
         if not self.check_secundary_menu:
             for tmp_keys in self.tmp_menu_cap:
                 self.builder_main_menu=  ft.Container(  # Container_Row
@@ -160,8 +161,6 @@ class second_screen(ft.Container):
             for tmp_keys in self.tmp_menu_cap_second:
                 self.builder_main_menu=  ft.Container(  # Container_Row
                                         **self.dict_style('_4143'),
-                                        # on_click= lambda _: event_4143(data='_4143'),
-                                        # on_click= lambda _: print(_.control.content.controls[1].content.value),
                                         on_click= lambda _: self.builder_secundary_menu(
                                                                 main_widget=self.show_secundary_menu,
                                                                 key_submenu=_.control.content.controls[1].content.value,

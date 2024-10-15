@@ -284,7 +284,9 @@ class first_screen(ft.Container):
     def change_on_rotation(self):
         # CHANGE SIZE OF WIDGET IF SCREEN IS MORE THAN ESTIMATION
         self.data_page = GLOBAL_VAR(get_global_var="main_page")
-        self.data_page.on_resized=lambda _:self.change_screen(data_page=self.data_page)
+
+        if not self.data_page == "":
+            self.data_page.on_resized=lambda _:self.change_screen(data_page=self.data_page)
 
 
     def change_screen(self,data_page):

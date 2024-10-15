@@ -23,9 +23,6 @@ index_database: dict = {
                         "La brigada de servicio":"BrigadaServicioInfo",
                         "La brigada":"BrigadaServicio",
                         "Organización de la Brigada":"OrganizaciónBrigadaServicio",
-
-                # "Orden por ocupación":"header",
-
                         "Director A + B":"DirectorAlimentosBebidas",
                         "Maitre":"Maitre",
                         "Capitán de Salón":"CapitanSalon",
@@ -43,9 +40,6 @@ index_database: dict = {
 
                         "Interrelación departamental":"InterrelaciónDepartamentalImportanciaInfo",
                         "Importancia interrelación":"InterrelaciónDepartamentalImportancia",
-
-                    "Departamento" : "header",
-
                         "Departamento de recepción":"Recepcion",
                         "Departamento de ama de llave":"AmaLLave",
                         "Departamento de mantenimiento":"Mantenimiento",
@@ -756,9 +750,6 @@ index_database: dict = {
                         "La brigada de servicio":"BrigadaServicioInfo",
                         "La brigada":"BrigadaServicio",
                         "Organización de la Brigada":"OrganizaciónBrigadaServicio",
-
-                "Orden por ocupacion":"header",
-
                         "A + B":"DirectorAlimentosBebidas",
                         "Maitre":"Maitre",
                         "Capitán de Salón":"CapitanSalon",
@@ -776,9 +767,6 @@ index_database: dict = {
 
                         "Interrelación departamental":"InterrelaciónDepartamentalImportanciaInfo",
                         "Importancia interrelación":"InterrelaciónDepartamentalImportancia",
-
-                    "Departamento" : "header",
-
                         "Departamento de recepción":"Recepcion",
                         "Departamento de ama de llave":"AmaLLave",
                         "Departamento de mantenimiento":"Mantenimiento",
